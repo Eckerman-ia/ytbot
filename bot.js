@@ -4,7 +4,7 @@ function ytBot(array){
 for(var i = 0; i < array.length; i++){
 ytFrame[i] = document.createElement("iframe");
 ytFrame[i].src = randomIP(array[i].replace("watch?v=", "embed/") + "?autoplay=1&mute=1&loop=1&playlist=" + array[i].replace("https://www.youtube.com/watch?v=", ""));
-document.body.appendChild(ytFrame[i]);
+document.body.appendChild("ytFrame[i]");
     var fdoc = ytFrame[i].contentDocument;
 
     fdoc.getElementsByTagName("video")[0].playbackRate = 5; // or whatever
